@@ -1,0 +1,113 @@
+body {
+  background-color: aqua;
+}
+
+.main {
+  font-family: Consolas, monaco, monospace;
+  position: absolute;
+  top: 50%; left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.generic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+table {
+  align-items: center; text-align: center;
+}
+
+.container h1 {
+  font-size: 30pt;
+}
+
+.container p {
+  font-size: 15pt;
+}
+
+button{
+  width: 50px; height: 50px;
+  background-color: rgba(255, 255, 255, 0);
+  background-blend-mode: lighten;
+
+  background-size: cover;
+  border-radius: 10px;
+  border: none;
+  box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 25px;
+
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.411);
+}
+
+#tools:hover {background-color: rgba(0, 0, 0, 0.178);}
+
+#github {
+  background-image: url(https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_640.png);
+}
+
+#itchio {
+  background-image: url(https://itch.io/static/images/itchio-square-144.png)
+}
+
+.window {
+  background-color: white;
+  position: absolute;
+  box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 25px;
+  font-family: "Comic Sans MS", "Comic Sans", monospace;
+  border: 1px solid black;
+  z-index: 0;
+}
+
+#win-header {
+  padding: 6px;
+  background-color: #ededed;
+  color: black;
+  cursor: move;
+}
+
+.menuBtn {
+  padding: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 5px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+#close {
+  background-color: #ED6B5E;
+}
+#min {
+  background-color: #F4BE50;
+}
+#max {
+  background-color: #51B742;
+  letter-spacing: -5px;
+  font-size: 9px;
+  padding-right: 4px;
+}
+
+#window-body {
+  padding: 20px;
+}

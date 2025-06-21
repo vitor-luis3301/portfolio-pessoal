@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pagina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onmousemove="coordinate(event)">
+  <div class="main">
+    <div id="formContainer" class="generic container">
+      <h1>Hello, I'm Vitor!</h1>
+      <p>Welcome to the rice fields, motherfucker!</p>
+      <table style="width: 100%;">
+        <tr>
+          <th><button id="github" onclick="openGithub()"></button></th>
+          <th><button id="itchio" onclick="openItch()"></button></th>
+          <th><button id="tools" onclick="tools()">🛠️</button></th>
+        </tr>
+        <tr>
+          <th>Github</th>
+          <th>itch.io</th>
+          <th>Tools I use</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="window" id="toolsWin" style="top: 20%; left: 43%; visibility: hidden;">
+    <div id="win-header">
+      <input type="button" class="menuBtn" id="close" value="&#10005;">
+      <input type="button" class="menuBtn" id="min" value="&#8212;">
+      <input type="button" class="menuBtn" id="max" value="&#9699;&#9701;">
+      Title
+    </div>
+    <div id="window-body">
+      <h3>Software</h3>
+      <ul>
+        <li>Visual Studio Code</li>
+        <li>Godot 4.3</li>
+        <li>Windows 11 Home</li>
+      </ul>
+      <h3>Languages</h3>
+      <ul>
+        <li>Python</li>
+        <li>C/C++</li>
+        <li>Golang</li>
+      </ul>
+      <h3>Frontend Development</h3>
+      <ul>
+        <li>Plain HTML + CSS + JS</li>
+        <li>Vue JS</li>
+      </ul>
+      <h3>Backend Development</h3>
+      <ul>
+        <li>Node JS</li>
+      </ul>
+    </div>
+  </div>
+  <!--
+    <div class="window" id="window2" style="top: 50%; left: 10%;">
+      <div id="win-header">Janelas Customizadas</div>
+      <div id="win-body">
+        <img src="https://upload.wikimedia.org/wikipedia/pt/e/e0/Windows_logo.png">
+      </div>
+    </div>
+    -->
+
+  <script src="index.js"></script>
+</body>
+
+</html>
